@@ -1,13 +1,42 @@
 @import 'base/_fonts'
+@import 'base/_variables'
+@import 'base/_text'
 
 *
-    margin: 0
-    padding: 0
-    box-sizing: border-box
+	margin: 0
+	padding: 0
+	box-sizing: border-box
 
 html
 	scroll-behavior: smooth
 
+body
+	background-color: #080808
+
+.container
+	width: 1300px
+	margin: 0 auto
+
+@import 'blocks/_devices'
+@import 'blocks/_earn'
+@import 'blocks/_satisfaction'
+
+@media ( max-width: 1200px )
+	.container
+		max-width: 960px
+
+@media ( max-width: 992px )
+	.container
+		max-width: 720px
+
+@media ( max-width: 768px )
+	.container
+		max-width: 540px
+
+@media ( max-width: 576px )
+	.container
+		width: 100%
+		padding: 0 15px
 
 // font-family: 'SBSansDisplaySemibold', sans-serif
 

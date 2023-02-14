@@ -1,0 +1,121 @@
+.devices
+    margin: 115px auto
+    &__inner
+        text-align: center
+        margin-bottom: 32px
+        h1
+            margin-bottom: 16px
+        h4
+           color: rgba(255, 255, 255, 0.56)
+           font-weight: 200
+    &__products
+        display: grid
+        height: auto
+        grid-auto-flow: dense
+        grid-auto-rows: minmax(20px, auto)
+        grid-template-columns: repeat(12, 1fr)
+        gap: 18px 1.87%
+    &__column
+        position: relative
+        height: 640px
+        &-sberbox
+            background: url(../img/SberBox.png) center center/contain no-repeat
+            grid-column-start: 1
+            grid-column-end: 7
+            .devices__column-text
+                top: 38%
+                left: 22%
+        &-sberportal
+            background: url(../img/SberPortal.png) center center/contain no-repeat
+            grid-column-start: 7
+            grid-column-end: 13
+            .devices__column-text
+                bottom: 16%
+                left: 15%
+        &-text
+            max-width: fit-content
+            position: absolute
+            a
+                display: block
+                max-width: fit-content
+                line-height: 10px
+                color: #fff
+                text-decoration: underline
+                text-underline-offset: 3px
+                text-decoration-thickness: 2px
+                margin-bottom: 8px
+            h5
+                margin-bottom: 8px
+                &:last-child
+                    margin-bottom: 0
+@media ( max-width: 1200px )
+    .devices
+        &__column
+            height: 500px
+            &-sberbox
+                .devices__column-text
+                    left: 17%
+            &-sberportal
+                .devices__column-text
+                    bottom: 13%
+                    left: 14%
+@media ( max-width: 992px )
+    .devices
+        &__column
+            height: 380px
+            &-text
+                width: 235px
+            &-sberbox
+                .devices__column-text
+                    left: 19%
+                    top: 35%
+@media ( max-width: 768px )
+    .devices
+        &__inner
+            margin-bottom: 60px
+        &__products
+            grid-template-columns: repeat(4, 1fr)
+            gap: 50px
+        &__column
+            &-sberbox
+                grid-column-end: 5
+                .devices__column-text
+                    left: 50%
+                    transform: translateX(-50%)
+                    top: 36%
+            &-sberportal
+                grid-column-start: 1
+                grid-column-end: 5
+                .devices__column-text
+                    bottom: 11%
+                    left: 23%
+@media ( max-width: 576px )
+    .devices
+        margin: 105px auto 80px
+        &__inner
+            margin-bottom: 32px
+            h1
+                margin-bottom: 2px
+        &__column
+            height: 360px
+            &-text
+                width: 250px
+                max-width: none
+            &-sberbox
+                .devices__column-text
+                    left: 17%
+                    left: 53%
+                    transform: translateX(-50%)  
+            &-sberportal
+                .devices__column-text
+                    bottom: 7%
+                    left: 16%
+@media ( max-width: 374px )
+    .devices
+        &__column
+            &-text
+                width: 80%
+
+
+
+        
